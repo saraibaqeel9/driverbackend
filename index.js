@@ -13,7 +13,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'https://sandmartin-tourism.surge.sh',
-    'https://mydrive.surge.sh'
+    'https://mytransport.surge.sh'
   ]
 }));
 app.use(express.json());
