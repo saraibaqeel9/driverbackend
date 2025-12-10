@@ -12,7 +12,8 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://sandmartin-tourism.surge.sh'
+    'https://sandmartin-tourism.surge.sh',
+    'https://mydrive.surge.sh'
   ]
 }));
 app.use(express.json());
@@ -55,7 +56,7 @@ app.post('/api/contact', async (req, res) => {
       },
     });
 
-    
+
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_USER,
