@@ -13,7 +13,8 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'https://sandmartin-tourism.surge.sh',
-    'https://mytransport.surge.sh'
+    'https://mytransport.surge.sh',
+    'https://gwtransport.mangotech-apps.com'
   ]
 }));
 app.use(express.json());
